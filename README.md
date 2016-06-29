@@ -17,3 +17,7 @@ Problem 8: "Largest Product in a Series" =
 Problem 9: "Special Pythagorean Triplet" = 31875000
 
 Problem 10: "Summation of Primes" =
+
+Problem 11: "Largest Product in a Grid" = 70600674
+
+
