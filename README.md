@@ -28,3 +28,4 @@ Problem 14: "Longest Collatz Sequence" = 837799
 
 Problem 15: "Lattice Paths" = 137846528820
 
+Problem 16: "Power Digit Sum" = 1366

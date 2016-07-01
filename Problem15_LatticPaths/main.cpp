@@ -42,12 +42,12 @@ long numRoutes(const int size) {
 
 int main(int argc, const char**argv)  {
     typedef chrono::high_resolution_clock Clock;
-    auto t1 = Clock::now();
 
     int cube;
     cout << "Please enter the cube size: ";
     cin >> cube;
 
+    auto t1 = Clock::now();
     cout << "Total number of routes is: " << numRoutes(cube) << endl;
 
     auto t2 = Clock::now();
