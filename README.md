@@ -20,4 +20,11 @@ Problem 10: "Summation of Primes" =
 
 Problem 11: "Largest Product in a Grid" = 70600674
 
+Problem 12: "Highly Divisible Triangular Number" = 76576500
+
+Problem 13: "Large Sum" =
+
+Problem 14: "Longest Collatz Sequence" = 837799
+
+Problem 15: "Lattice Paths" = 137846528820
 
