@@ -32,4 +32,6 @@ Problem 16: "Power Digit Sum" = 1366
 
 Problem 17: "Number Letter Counts" = 21124
 
-Problem 18: "Maximum Path Sum I" =
+Problem 18: "Maximum Path Sum I" = 1074
+
+Problem 19: "Counting Sundays" =

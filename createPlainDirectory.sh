@@ -6,7 +6,7 @@ then
     echo "Directory doesn't exit. Creating now"
     sleep 1
     mkdir ./$name
-    echo -e "File created\n"
+    echo -e "Directory created\n"
     sleep 1
 
     echo "Creating main.cpp Timer-Chrono-milliseconds Template"
@@ -21,7 +21,7 @@ then
     echo -e "    cout << ns.count() << \" milliseconds\" << endl;" >> $name/main.cpp
     echo -e "    return 0;" >> $name/main.cpp
 	echo -e "}" >> $name/main.cpp
-
+    echo "Created main.cpp in new directory"
 else
     echo "Error - File exits"
 fi
