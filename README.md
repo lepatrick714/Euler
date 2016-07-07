@@ -34,4 +34,12 @@ Problem 17: "Number Letter Counts" = 21124
 
 Problem 18: "Maximum Path Sum I" = 1074
 
-Problem 19: "Counting Sundays" =
+Problem 19: "Counting Sundays" = 171
+
+Problem 20: "Factorial Digit Sum" = 648
+
+Problem 21: "Amicable Numbers" = 31626
+
+Problem 22: "Names Scores" = 871198282
+
+Problem 23: "Non-abundant sums" =
