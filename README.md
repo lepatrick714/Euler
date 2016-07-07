@@ -42,4 +42,6 @@ Problem 21: "Amicable Numbers" = 31626
 
 Problem 22: "Names Scores" = 871198282
 
-Problem 23: "Non-abundant sums" =
+Problem 23: "Non-abundant sums" = 4179871
+
+Problem 24: "Lexicographic Permutations" =

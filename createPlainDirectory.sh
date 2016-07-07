@@ -27,7 +27,8 @@ then
         echo -e "    return 0;" >> $name/main.cpp
 	    echo -e "}" >> $name/main.cpp
         echo "Created main.cpp in new directory"
-    else
+    elif [ "$lang" == "Python" ] || [ "$lang" == "C++" ]
+    then
         echo "Creating main.py with Timer Template"
         touch $name/main.py
         echo -e "import time\n" >> $name/main.py
@@ -35,6 +36,9 @@ then
         echo -e "elapsed = time.time()\n" >> $name/main.py
         echo -e "print("found in %s seconds") % (elapsed)" >> $name/main.py
         echo "Created main.py in new directory"
+    else
+        echo "Error Please check spelling of C++ or Python"
+        rm -rf ./$name
     fi
 else
     echo "Error - File exits"
