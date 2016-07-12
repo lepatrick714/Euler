@@ -34,7 +34,7 @@ then
         echo -e "import time\n" >> $name/main.py
         echo -e "start = time.time()\n\n\n\n" >> $name/main.py
         echo -e "elapsed = time.time()\n" >> $name/main.py
-        echo -e "print("found in %s seconds") % (elapsed)" >> $name/main.py
+        echo -e "print(\"found in %s seconds\") % (elapsed)" >> $name/main.py
         echo "Created main.py in new directory"
     else
         echo "Error Please check spelling of C++ or Python"
