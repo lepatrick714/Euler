@@ -45,3 +45,9 @@ Problem 22: "Names Scores" = 871198282
 Problem 23: "Non-abundant sums" = 4179871
 
 Problem 24: "Lexicographic Permutations" =
+
+Problem 25: "1000-digit Fibonacci Number" = 4782
+
+Problem 26: "Reciprocal Cycles" = 983
+
+Problem 27: "Quadratic Primes" =
