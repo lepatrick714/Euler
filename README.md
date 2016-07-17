@@ -50,4 +50,8 @@ Problem 25: "1000-digit Fibonacci Number" = 4782
 
 Problem 26: "Reciprocal Cycles" = 983
 
-Problem 27: "Quadratic Primes" =
+Problem 27: "Quadratic Primes" = -59231
+
+Problem 28: "Number Spiral Diagonals" = 669171001
+
+Problem 29: "Distinct Powers" =
