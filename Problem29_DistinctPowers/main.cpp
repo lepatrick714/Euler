@@ -4,30 +4,21 @@
 #include <cmath>
 #include <algorithm>
 #include <vector>
+#include <fstream>
+#include <set>
 
 using namespace std;
 
 void distinctPowers(const int a, const int b) {
-    vector<long long unsigned> v;
+    set<double> yes;
 
     for(unsigned i=2; i<=a; i++) {
         for(unsigned j=2; j<=b; j++) {
-            v.push_back(pow(i,j));
+            double temp = pow(i, j);
+            yes.insert(temp);
         }
     }
-
-    sort(v.begin(), v.end());
-    int ctr = 0;
-    long long unsigned curr = 0;
-    for(unsigned i=0; i<v.size(); i++) {
-        if(v.at(i) != curr) {
-            ctr++;
-            curr = v.at(i);
-        }
-        cout << v.at(i) << endl;
-    }
-    cout << endl;
-    cout << "Number of distinct terms: " << ctr << endl;
+    cout << yes.size() << endl;
 }
 
 int main(int argc, const char**argv)  {
