@@ -54,4 +54,16 @@ Problem 27: "Quadratic Primes" = -59231
 
 Problem 28: "Number Spiral Diagonals" = 669171001
 
-Problem 29: "Distinct Powers" =
+Problem 29: "Distinct Powers" = 9183
+
+Problem 30: "Digit Fifth Powers" = 443839
+
+Problem 31: "Coin Sums" = 73682
+
+Problem 32: " " =
+
+Problem 33: "Digit Cancelling Fractions" =
+
+Problem 34: "Digit Factorials" = 40730
+
+
