@@ -62,8 +62,12 @@ Problem 31: "Coin Sums" = 73682
 
 Problem 32: " " =
 
-Problem 33: "Digit Cancelling Fractions" =
+Problem 33: "Digit Cancelling Fractions" = 100
 
 Problem 34: "Digit Factorials" = 40730
 
+Problem 35: "Circular Primes" = 55
 
+Problem 36: "Double-base Palindromes" = 872187
+
+Problem 37: "Truncatable Primes" =
