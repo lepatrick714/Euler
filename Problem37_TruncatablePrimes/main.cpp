@@ -66,7 +66,6 @@ int main(int argc, const char**argv)  {
     }
 
     cout << total << endl;
-
     auto t2 = Clock::now();
     chrono::milliseconds ns = chrono::duration_cast<chrono::milliseconds>(t2-t1);
     cout << ns.count() << " milliseconds" << endl;

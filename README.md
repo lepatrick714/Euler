@@ -70,4 +70,6 @@ Problem 35: "Circular Primes" = 55
 
 Problem 36: "Double-base Palindromes" = 872187
 
-Problem 37: "Truncatable Primes" =
+Problem 37: "Truncatable Primes" = 748317
+
+Problem 38: "Pandigital Multiples" =
