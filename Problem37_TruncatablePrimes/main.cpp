@@ -6,7 +6,10 @@
 using namespace std;
 
 bool is_prime(long num) {
-    for(long i=2; i<=num/2; i++) {
+    if(num == 1) {
+        return false;
+    }
+    for(long i=2; i<=sqrt(num); i++) {
        if(num%i==0) {
             return false;
        }
@@ -58,7 +61,6 @@ int main(int argc, const char**argv)  {
         if(isLeftTrunc(i) && isRightTrunc(i)) {
             ctr++;
             total += i;
-            cout << i << endl;
         }
         i++;
     }
