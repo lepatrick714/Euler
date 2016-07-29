@@ -2,49 +2,66 @@
 #include <chrono>
 #include <ctime>
 #include <string>
-
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 bool is_Pandigital(const string num) {
     bool check[11] = {0};
-    for(unsigned i=0; i<num.size(); i++) {
-        int x = (int)num[i] - 48;
-        if(check[x] != 0) {
+
+    for(int i=0; i<num.size(); i++) {
+        //cout << "Testing num[i] " << "check[num[i]-48] = " << check[num[i]-48] << endl;
+        if(num[i]-48 == 0) {
+            return false;
+        }
+        else if(check[num[i]-48] != 0) {
             return false;
         }
         else {
-            check[num[i]] = 1;
+            check[num[i]-48] = 1;
         }
     }
+
     return true;
 }
 
-string PandigitalMultiples() {
-    int currentNum = 9;
+void PandigitalMultiples() {
+    int currentNum = 1;
     int multiplier = 1;
     string currentResult = "";
+    vector<int> collection;
 
     for(;;) {
         int tempValue = currentNum*multiplier;
         currentResult += to_string(tempValue);
 
-        multiplier++;
-
         if(currentResult.size() == 9 && is_Pandigital(currentResult)) {
-            cout << currentResult << endl;
+            collection.push_back(atoi(currentResult.c_str()));
+
+            currentNum++;
+            multiplier = 1;
+            currentResult = "";
+        }
+        else if(currentResult.size() > 9) {
+            currentNum++;
+            multiplier = 1;
+            currentResult = "";
+        }
+        else if(currentNum > 10000) {
             break;
         }
-
+        else {
+            multiplier++;
+        }
     }
-
-    return currentResult;
+    cout << collection.at(collection.size()-1) << endl;
 }
 
 int main(int argc, const char**argv)  {
     typedef chrono::high_resolution_clock Clock;
     auto t1 = Clock::now();
 
-    cout << PandigitalMultiples() << endl;
+    PandigitalMultiples();
 
     auto t2 = Clock::now();
     chrono::milliseconds ns = chrono::duration_cast<chrono::milliseconds>(t2-t1);
