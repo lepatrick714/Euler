@@ -74,4 +74,6 @@ Problem 37: "Truncatable Primes" = 748317
 
 Problem 38: "Pandigital Multiples" = 932718654
 
-Problem 39: "Integer Right Triangles" =
+Problem 39: "Integer Right Triangles" = 840
+
+Problem 40: "Champernowne's Constant" = 210
