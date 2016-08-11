@@ -14,14 +14,12 @@ bool is_prime(const int a) {
     return true;
 }
 
-
-
 bool isPandigital(const int a) {
     string stringTemp = to_string(a);
-    int temp[stringTemp.size()] = {0};
+    int temp[stringTemp.size()-1] = {0};
 
     for(unsigned i=0; i<stringTemp.size(); i++) {
-        int yes = stringTemp[i]-48;
+        int yes = stringTemp[i]-49;
         if(temp[yes] == 1) {
             return false;
         }
@@ -30,6 +28,9 @@ bool isPandigital(const int a) {
         }
     }
 
+    for(unsigned i=0; i<stringTemp.size()-1; i++) {
+        if(temp[i] != 1) return false;
+    }
     return true;
 }
 
@@ -39,20 +40,14 @@ int main(int argc, const char**argv)  {
 
     long temp = 0;
 
-    for(long i=8000001; i>=2143; i-=2) {
+    for(long i=7654321; i>=2143; i-=2) {
         if(is_prime(i)) {
             if(isPandigital(i)) {
-                if(temp < i) {
-                    temp = i;
-                }
+                cout << i << endl;
+                break;
             }
         }
-        cout << i << endl;
     }
-
-    cout << temp << endl;
-
-
 
     auto t2 = Clock::now();
     chrono::milliseconds ns = chrono::duration_cast<chrono::milliseconds>(t2-t1);
