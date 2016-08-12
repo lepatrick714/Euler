@@ -77,3 +77,5 @@ Problem 38: "Pandigital Multiples" = 932718654
 Problem 39: "Integer Right Triangles" = 840
 
 Problem 40: "Champernowne's Constant" = 210
+
+Problem 41: "Pandigital Prime" = 7652413

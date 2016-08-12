@@ -13,39 +13,27 @@ def is_prime(a) :
     return True
 
 
-
 def isPandigital(a) :
     stringTemp = str(a)
-    temp = range(len(stringTemp))
+    temp = list(stringTemp)
 
-    for i in range(len(stringTemp)) :
-        temp[i] = 0
-
-    for i in range(len(stringTemp)-1) :
-        yes = int(stringTemp[i])-1
-        if temp[yes] == 1:
-            return False
-        else:
-            return True
-
-    for i in range(len(stringTemp)-1) :
-        if temp[i] != 1 :
-            return False
-
+    ctr = 1
+    while ctr <= len(stringTemp) :
+        for item in temp :
+            if str(ctr) in temp :
+                ctr += 1
+            else :
+                return False
     return True
 
-
-
 start = time.time()
-
-temp = 0
 
 i = 7654321
 while i >= 2143 :
     if is_prime(i) :
         if isPandigital(i) :
             print i
-            break
+            break;
     i-=2
 
 elapsed = time.time()
