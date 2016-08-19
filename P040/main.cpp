@@ -5,10 +5,6 @@
 
 using namespace std;
 
-
-
-
-
 int main(int argc, const char**argv)  {
     typedef chrono::high_resolution_clock Clock;
     auto t1 = Clock::now();

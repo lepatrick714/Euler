@@ -79,3 +79,5 @@ Problem 39: "Integer Right Triangles" = 840
 Problem 40: "Champernowne's Constant" = 210
 
 Problem 41: "Pandigital Prime" = 7652413
+
+Problem 42: "Coded Triangle Numbers" = 162
